@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Blue"
+    tools:context="com.example.goseppe.androidproject_jb.addActivity"
+    android:weightSum="7">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:text="Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:id="@+id/textView2"
+            android:layout_alignBaseline="@+id/editSubjectET"
+            android:layout_alignBottom="@+id/editSubjectET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:inputType="textPersonName"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/editSubjectET"
+            android:hint="Enter the Film title"
+            android:layout_weight="2"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="3">
+
+        <TextView
+            android:text="Description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="20dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/manualBodyET"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:layout_height="100dp"
+            android:gravity="top" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5">
+
+        <TextView
+            android:text="URL:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Enter the url"
+            android:id="@+id/manualUrlET"
+            android:layout_weight="3"
+            android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+        <Button
+            android:text="show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/showBtn"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/filmImg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <Button
+            android:text="Add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addBtn"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelBtn"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_internet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Blue"
+    tools:context="com.example.goseppe.androidproject_jb.InternetSearchActivity"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Search:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/intSearchET"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:layout_weight="3"
+            android:hint="enter your search" />
+
+        <Button
+            android:text="go"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/goBtn"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/myIntLV" />
+
+</LinearLayout>
